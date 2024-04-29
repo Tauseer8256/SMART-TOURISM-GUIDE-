@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/style.css';
+import '@nlux/themes/nova.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// eslint-disable-next-line 
+import i18n from "./i18n"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

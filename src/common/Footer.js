@@ -1,18 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaTwitter, FaFacebook, FaInstagram ,FaLinkedin } from "react-icons/fa";
+import React from 'react'; // [1]
+import { Link } from 'react-router-dom'; // [2]
+import { FaTwitter, FaFacebook, FaInstagram ,FaLinkedin } from "react-icons/fa"; // [3]
+import { useTranslation } from "react-i18next"; // [4]
 
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const useFullLinks = t("Footer.UsefulLinks", { returnObjects: true });
+  const ourServices = t("Footer.OurServices", { returnObjects: true });
   return (
     <footer id="footer" className="footer">
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-5 col-md-12 footer-info">
             <a href="index.html" className="logo d-flex align-items-center">
-              <span>SMART TOURISM GUIDE</span>
+              <span>{t('Footer.SiteName')}</span>
             </a>
-            <p>It is Better to Travel Well Than to Arrive</p>
+            <p>{t('Footer.SiteDescription')}</p>
             <div className="social-links d-flex mt-4">
             <a href="#" className="twitter"><FaTwitter /></a>
            <a href="#" className="facebook"><FaFacebook /></a>
@@ -22,30 +26,25 @@ const Footer = () => {
           </div>
   
           <div className="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>{t('Footer.UsefulLinksHeading')}</h4>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Services</Link></li>
-              <li><Link to="/">About us</Link></li>
-              <li><Link to="/">AI Assistance</Link></li>
+              {useFullLinks?.map((item,index)=>(<li key={index}><Link to={item?.Route}>{item?.Label}</Link></li>))}
             </ul>
           </div>
   
           <div className="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>{t('Footer.OurServicesHeading')}</h4>
             <ul>
-              <li><Link to="/">Customer Support</Link></li>         
-              <li><Link to="/">Cultural Immersion</Link></li>
-              <li><Link to="/">Tips and Recommendations</Link></li>
+            {ourServices?.map((item,index)=>(<li key={index}><Link to="">{item}</Link></li>))}         
             </ul>
           </div>
   
           <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
+            <h4>{t('Footer.ContactUsHeading')}</h4>
             <p>
-            <strong>Location:</strong>   43 Raymouth Rd.<br /> Baltemoer<br />3910, London <br />
-              <strong>Phone:</strong> +971521661480<br />
-              <strong>Email:</strong>  info@smarttourismguide@gmail.com<br />
+            <strong>{t('Footer.LocationHeading')}:</strong>   {t('Footer.Location')}
+              <strong>{t('Footer.PhoneHeading')}:</strong> +971521661480<br />
+              <strong>{t('Footer.EmailHeading')}:</strong>  info@smarttourismguide@gmail.com<br />
             </p>
           </div>
         </div>
@@ -55,3 +54,8 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// [1] React, "React Documentation," [Online]. Available: https://reactjs.org/docs/getting-started.html. [Accessed: April 21, 2024].
+// [2] React Training, "React Router Documentation," [Online]. Available: https://reactrouter.com/web/guides/quick-start. [Accessed: April 21, 2024].
+// [3] react-icons, "React Icons Documentation," [Online]. Available: https://react-icons.github.io/react-icons/. [Accessed: April 21, 2024].
+// [4] react-i18next. (n.d.). React i18next. Retrieved from https://react.i18next.com/

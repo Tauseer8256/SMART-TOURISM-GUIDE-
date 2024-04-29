@@ -1,18 +1,47 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Navbar } from 'react-bootstrap';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { MdEmail,MdCall,MdWhatsapp } from "react-icons/md";
-import LogoImage from'../assets/images/site-logo.png'
+import React, { useEffect, useState } from "react";  // [1]
+import { Link, useLocation } from "react-router-dom"; // [2]
+import { Container, Navbar } from "react-bootstrap"; // [3]
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"; // [4]
+import { MdEmail, MdCall } from "react-icons/md"; // [5]
+import LogoImage from "../assets/images/site-logo.png";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next"; // [6]
+import ReactFlagsSelect from "react-flags-select"; // [7]
 
 const Header = () => {
+  const { t } = useTranslation();
+  const location = useLocation();
+
+  // State to hold the selected language
+  const [selectedLanguage, setSelectedLanguage] = useState("");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("i18nextLng");
+    if (storedLanguage) {
+      setSelectedLanguage(storedLanguage);
+      i18n.changeLanguage(storedLanguage);
+    } else {
+      // If no language is stored in local storage, default to English
+      setSelectedLanguage("GB");
+      i18n.changeLanguage("GB");
+    }
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
+
   const toggle = () => setIsOpen(!isOpen);
-  // const router = useRouter();
+
   const closeMenu = () => {
     if (isOpen) {
       toggle();
     }
+  };
+
+  const handleLanguageSelect = (e) => {
+    const selectedValue = e;
+    setSelectedLanguage(selectedValue);
+    localStorage.setItem("i18nextLng", selectedValue); // Store selected language in local storage
+    i18n.changeLanguage(selectedValue);
   };
 
   return (
@@ -20,14 +49,31 @@ const Header = () => {
       <section id="topbar" className="topbar d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center">
-            <i className="bi bi-envelope d-flex align-items-center"><MdEmail /><a href="mailto:smarttourismguide@gmail.com"> smarttourismguide@gmail.com</a></i>
-            <i className="bi bi-phone d-flex align-items-center ms-4"><MdCall /><span> +971521661480</span></i>
+            <i className="bi bi-envelope d-flex align-items-center">
+              <MdEmail />
+              <a href="mailto:smarttourismguide@gmail.com">
+                {" "}
+                smarttourismguide@gmail.com
+              </a>
+            </i>
+            <i className="bi bi-phone d-flex align-items-center ms-4">
+              <MdCall />
+              <span> +971521661480</span>
+            </i>
           </div>
           <div className="social-links d-none d-md-flex align-items-center">
-            <a href="#" className="twitter"><FaTwitter /></a>
-            <a href="#" className="facebook"><FaFacebook /></a>
-            <a href="#" className="instagram"><FaInstagram /></a>
-            <a href="#" className="linkedin"><FaLinkedin /></a>
+            <a href="#" className="twitter">
+              <FaTwitter />
+            </a>
+            <a href="#" className="facebook">
+              <FaFacebook />
+            </a>
+            <a href="#" className="instagram">
+              <FaInstagram />
+            </a>
+            <a href="#" className="linkedin">
+              <FaLinkedin />
+            </a>
           </div>
         </div>
       </section>
@@ -36,82 +82,80 @@ const Header = () => {
         <Navbar expand="lg" className="navigation-bar sticky p-0">
           <Container>
             <Navbar.Brand className="pt-0">
-              <img src={LogoImage} alt="Site Logo" className="img-fluid header-logo d-none d-md-block" />
-              <img src={LogoImage} alt="Site Logo" className="img-fluid  header-logo d-md-none" />
+              <img
+                src={LogoImage}
+                alt="Site Logo"
+                className="img-fluid header-logo d-none d-md-block"
+              />
+              <img
+                src={LogoImage}
+                alt="Site Logo"
+                className="img-fluid  header-logo d-md-none"
+              />
             </Navbar.Brand>
             <div className="toggle-block" onClick={toggle}>
-              <div className={`cta ${isOpen ? 'active' : ''}`}>
-                <div className={`toggle-btn type1 ${isOpen ? 'active' : ''}`}></div>
+              <div className={`cta ${isOpen ? "active" : ""}`}>
+                <div
+                  className={`toggle-btn type1 ${isOpen ? "active" : ""}`}
+                ></div>
               </div>
             </div>
             <Navbar.Collapse
-              className={`justify-content-center ${isOpen ? 'show' : ''}`}
+              className={`justify-content-center ${isOpen ? "show" : ""}`}
               id="navbarNav"
             >
               <ul className="navbar-nav navbar-right navmanu">
                 <li className="nav-item" onClick={closeMenu}>
-                  <Link className={'active nav-link'} to="/">
-                    Home
+                  <Link
+                    className={
+                      location.pathname === "/" ? "active nav-link" : "nav-link"
+                    }
+                    to="/"
+                  >
+                    {t("Header.Menu1")}
                   </Link>
                 </li>
                 <li className="nav-item" onClick={closeMenu}>
                   <Link
-                    className={'nav-link'}
-                    to="/"
+                    className={
+                      location.pathname?.includes("blog")
+                        ? "active nav-link"
+                        : "nav-link"
+                    }
+                    to="/blog-list"
                   >
-                    Services
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={closeMenu}>
-                  <Link
-                    className={ 'nav-link'}
-                    to="/"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={closeMenu}>
-                  <Link
-                    className={ 'nav-link'}
-                    to="/"
-                  >
-                    AI Assistance
+                    {t("Header.Menu2")}
                   </Link>
                 </li>
                 {/* <li className="nav-item" onClick={closeMenu}>
-                  <Link
-                    className={router.pathname == '/services' ? 'active nav-link' : 'nav-link'}
-                    to="/services"
-                  >
-                    Services
-                  </Link>
-                </li> */}
-                {/* <li className="nav-item" onClick={closeMenu}>
-                  <Link
-                    className={router.pathname == '/projects' ? 'active nav-link' : 'nav-link'}
-                    to="/projects"
-                    >
-                    Projects
-                  </Link>
-                </li> */}
-                {/* <li className="nav-item" onClick={closeMenu}>
-                  <Link 
-                  className={ 'nav-link'}
-                  to="/"
-                  >
-                    Our Team
+                  <Link className={"nav-link"} to="/">
+                    {t("Header.Menu3")}
                   </Link>
                 </li> */}
                 <li className="nav-item" onClick={closeMenu}>
-                  <Link
-                    className={ 'nav-link'}
-                    to="/"
-                  >
-                    Contact Us
+                  <Link className={
+                      location.pathname === "/about-us" ? "active nav-link" : "nav-link"
+                    } to="/about-us">
+                    {t("Header.Menu4")}
+                  </Link>
+                </li>
+                <li className="nav-item" onClick={closeMenu}>
+                  <Link className={
+                      location.pathname === "/ai-assistance" ? "active nav-link" : "nav-link"
+                    } to="/ai-assistance">
+                    {t("Header.Menu5")}
                   </Link>
                 </li>
               </ul>
             </Navbar.Collapse>
+            <ReactFlagsSelect
+              showSelectedLabel={false}
+              showOptionLabel={false}
+              // countries={["US","GB", "PK", "IN", "BD", "CN"]}
+              countries={["GB","IN","ES","JP"]}
+              selected={selectedLanguage}
+              onSelect={(code) => handleLanguageSelect(code)}
+            />
           </Container>
         </Navbar>
       </section>
@@ -120,3 +164,9 @@ const Header = () => {
 };
 
 export default Header;
+
+// [1] React, "React Documentation," [Online]. Available: https://reactjs.org/docs/getting-started.html. [Accessed: April 21, 2024].
+// [2] React Training, "React Router Documentation," [Online]. Available: https://reactrouter.com/web/guides/quick-start. [Accessed: April 21, 2024].
+// [4,5] react-icons, "React Icons Documentation," [Online]. Available: https://react-icons.github.io/react-icons/. [Accessed: April 21, 2024].
+// [6] react-i18next. (n.d.). React i18next. Retrieved from https://react.i18next.com/
+// [7] React Flags Select. (n.d.). React Flags Select. Retrieved from https://www.npmjs.com/package/react-flags-select

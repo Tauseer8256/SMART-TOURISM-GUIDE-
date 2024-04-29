@@ -1,0 +1,119 @@
+
+{"Welcome": "Welcome to mere liye",
+    "places": [
+        {
+            "id": 1,
+            "name": "Buckingham Palace",
+            "image": "buckinghampalace.jpeg",
+            "single_blog_image":"/images/blog-details/buckingham_palace-1.jpg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 2,
+            "name": "The British Museum",
+            "image": "british-museum.jpeg",
+            "single_blog_image":"/images/blog-details/british-museum-1.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "The British Museum houses a vast collection of art and antiquities from around the world.",
+            "single_blog_description": "The British Museum, located in the heart of London, stands as a testament to human history and cultural heritage. Established in 1753, it is one of the oldest and most comprehensive museums in the world, attracting millions of visitors annually. With its vast collection spanning over two million years of history, the British Museum offers a captivating journey through civilizations, art, and culture from every corner of the globe. <br>The museum's collection is incredibly diverse, featuring artifacts and artworks from virtually every period of human history. From ancient Egyptian mummies and Mesopotamian treasures to Greek sculptures and Roman artifacts, the British Museum provides a window into the rich tapestry of human civilization. Visitors can explore renowned exhibits such as the Rosetta Stone, the Elgin Marbles, and the Egyptian mummies, each offering insight into different facets of human culture and achievement.<br>One of the museum's most iconic features is the Great Court, a spectacular glass-roofed space that serves as the museum's central hub. Surrounded by majestic columns and adorned with intricate designs, the Great Court provides a stunning backdrop for visitors to relax and admire the museum's grandeur. It also houses the museum's famous reading room, a historic space that once served as a library and now hosts special events and exhibitions.<br>In addition to its permanent collection, the British Museum regularly hosts temporary exhibitions that explore specific themes, regions, or periods of history in greater depth. These exhibitions offer visitors the opportunity to delve deeper into topics of interest and gain a deeper understanding of the cultural significance of various artifacts and artworks.<br>Beyond its role as a repository of treasures, the British Museum also serves as a center for research and education. Scholars from around the world come to study its vast collection, contributing to our understanding of human history and culture. The museum also offers a range of educational programs and resources for visitors of all ages, including guided tours, lectures, and workshops designed to engage and inspire.<br>In recent years, the British Museum has also embraced digital technology to enhance the visitor experience. Through interactive exhibits, multimedia installations, and online resources, the museum seeks to make its collection more accessible to a global audience. Virtual tours, educational videos, and digital archives enable people from all walks of life to explore the museum's treasures from the comfort of their own homes.<br>As a cultural institution of international renown, the British Museum plays a vital role in promoting cross-cultural understanding and appreciation. By showcasing the achievements of diverse civilizations and fostering dialogue and exchange, the museum helps to bridge divides and promote mutual respect and understanding among people of different backgrounds and perspectives.<br>In summary, the British Museum stands as a beacon of human achievement and creativity, offering a rich tapestry of history, art, and culture for visitors to explore and enjoy. Its vast collection, stunning architecture, and commitment to education and research make it a truly extraordinary institution that continues to inspire and enrich the lives of millions around the world."
+        },
+        {
+            "id": 3,
+            "name": "Tower of London",
+            "image": "tower-of-london",
+            "single_blog_image":"/images/blog-details/tower-of-london-1.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "The Tower of London is a historic castle located on the north bank of the River Thames.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+
+        {
+            "id": 4,
+            "name": "Household Cavalry",
+            "image": "household-cavalry.jpeg",
+            "single_blog_image":"/images/blog-details/tower-of-london-1.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": " Watch troopers working with their horses in the original 18th-century stables, and browse a collection representing more than 300 years of military history.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 5,
+            "name": "Kensington Palace",
+            "image": "Kensington-Palace.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": " Kensington Palace offers a glimpse into the lives of its past royal residents. Marvel at gowns worn by royalty from the Georgian era to the modern day in the spectacular Crown to Couture exhibition",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 6,
+            "name": "National Gallery",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "An esteemed art museum housing a vast collection of European paintings from the 13th to 19th centuries, including masterpieces by renowned artists such as Leonardo da Vinci, Vincent van Gogh, and Claude Monet.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 7,
+            "name": "Westminster Abbey",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "A historic church where British monarchs are crowned, married, and buried, renowned for its stunning Gothic architecture and royal connections.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 8,
+            "name": "London Eye",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "An iconic Ferris wheel offering panoramic views of the city skyline and landmarks like the Thames River, Big Ben, and Buckingham Palace.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 9,
+            "name": "St. Paul's Cathedral",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "An architectural masterpiece designed by Sir Christopher Wren, featuring a magnificent dome and rich history, including hosting royal weddings and state funerals.",
+            "single_blog_description": "Buckingham Palace is an essential part of England's history and culture.Originally known as Buckingham House, the building at the core of today's palace was a large townhouse built for the Duke of Buckingham in 1703, on a site that had been in private ownership for at least 150 years. It was then acquired by King George III in 1761 as a private residence for Queen Charlotte and became known as The Queen's House.During the 19th century, architects John Nash and Edward Blore constructed three wings around a central courtyard.Buckingham Palace became the official London residence of the British monarch on the accession of Queen Victoria in 1837.Following major structural additions in the late 19th and early 20th centuries, and the King's Gallery built on the site of the destroyed palace chapel during the Second World War, it is now a grand palace with 775 lavishly decorated rooms and the largest private garden in London."
+        },
+        {
+            "id": 10,
+            "name": "Trafalgar Square",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "A bustling public square dominated by Nelson's Column and flanked by iconic landmarks such as the National Gallery, surrounded by vibrant cultural events and performances."
+        },
+        {
+            "id": 11,
+            "name": "Covent Garden",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "A lively district known for its bustling markets, street performers, boutique shops, and diverse dining options, offering a vibrant atmosphere day and night."
+        },
+        {
+            "id": 12,
+            "name": "Natural History Museum",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "A world-renowned museum housing a vast collection of exhibits showcasing the natural world, including dinosaur skeletons, minerals, gems, and interactive displays for all ages."
+        },
+        {
+            "id": 13,
+            "name": "Shakespeare's Globe Theatre",
+            "image": "national-gallery.jpeg",
+            "single_blog_image":"/images/blog-details/blog-hero-image.jpeg",
+            "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+            "description": "A faithful reconstruction of the original Elizabethan theatre where William Shakespeare's plays were performed, offering immersive theatrical experiences in a historic setting."
+        }
+    ]
+}

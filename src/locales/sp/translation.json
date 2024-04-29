@@ -1,0 +1,142 @@
+{
+    "HomePage": {
+        "HeroSection": {
+            "Heading": "Es Mejor Viajar Bien Que Llegar",
+            "Text": "Nos dedicamos a brindarte la mejor experiencia de viaje, adaptada a tus intereses y preferencias.",
+            "Button": "Comenzar"
+        },
+        "AboutUs": {
+            "badgeText": "SOBRE NOSOTROS",
+            "Heading": "Explora Todos los Rincones del Mundo Con Nosotros",
+            "Description": "Muy lejos, detrás de las palabras montañas, lejos de los países Vokalia y Consonantia, viven los textos ciegos. Separados viven en Bookmarksgrove justo en la costa de la Semántica, un gran océano de idiomas. Un pequeño río llamado Duden fluye por su lugar y lo abastece con la necesaria regelialia. Es un país paradisíaco, en el que partes asadas de oraciones vuelan hacia tu boca",
+            "ImageOne": "",
+            "ImageTwo": "",
+            "BulletPoint": [
+                "Consejos y Recomendaciones de Expertos",
+                "Itinerarios Personalizados",
+                "Experiencias de Inmersión Cultural",
+                "Soporte al Cliente 24/7"
+            ]
+        },
+        "DestinationSlides": {
+            "badgeText": "LO QUE OFRECEMOS",
+            "Heading": "Ofrecemos los Mejores Destinos",
+            "Description": "Muy lejos, detrás de las palabras montañas, lejos de los países Vokalia y Consonantia, viven los textos ciegos. Separados viven en Bookmarksgrove justo en la costa de la Semántica, un gran océano de idiomas",
+            "SlidesImages": ["", "", "", ""]
+        }
+    },
+    "Header": {
+        "Menu1": "Inicio",
+        "Menu2": "Blog",
+        "Menu3": "Servicios",
+        "Menu4": "Sobre Nosotros",
+        "Menu5": "Asistencia de IA"
+    },
+    "Footer": {
+        "SiteName": "GUÍA DE TURISMO INTELIGENTE",
+        "SiteDescription": "Es Mejor Viajar Bien Que Llegar",
+        "UsefulLinksHeading": "Enlaces Útiles",
+        "UsefulLinks": [
+            { "Label": "Inicio", "Route": "/" },
+            { "Label": "Blog", "Route": "/blog-list" },
+            { "Label": "Servicios", "Route": "/blog-list" },
+            { "Label": "Asistencia de IA", "Route": "/" }
+        ],
+        "OurServicesHeading": "Nuestros Servicios",
+        "OurServices": [
+            "Soporte al Cliente",
+            "Inmersión Cultural",
+            "Consejos y Recomendaciones"
+        ],
+        "ContactUsHeading": "Contáctanos",
+        "LocationHeading": "Ubicación",
+        "Location": "43 Raymouth Rd. Baltemoer 3910, Londres",
+        "PhoneHeading": "Teléfono",
+        "EmailHeading": "Correo Electrónico"
+    },
+    "Welcome": "Bienvenido a Español",
+    "BlogsPage": {
+        "HeroSection": {
+            "Heading": "Descubre las atracciones turísticas de Londres",
+            "BackgroundImage": ""
+        },
+        "ReadMoreBtn": "Leer Más",
+        "BlogList": {
+            "HeadingText": "Top atracciones turísticas en Londres",
+            "places": [
+                {
+                    "id": 1,
+                    "name": "Palacio de Buckingham",
+                    "image": "/images/blog-list/buckinghampalace.jpeg",
+                    "single_blog_image": "/images/blog-details/buckingham_palace-1.jpg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "El Palacio de Buckingham es la residencia y sede administrativa del monarca del Reino Unido.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa adosada construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el rey Jorge III en 1761 como residencia privada para la reina Carlota y se conoció como La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a finales del siglo XIX y principios del siglo XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones decoradas con lujo y el jardín privado más grande de Londres."
+                },
+                {
+                    "id": 2,
+                    "name": "Museo Británico",
+                    "image": "/images/blog-list/british-museum.jpeg",
+                    "single_blog_image": "/images/blog-details/british-museum-1.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "El Museo Británico es uno de los museos más antiguos y famosos del mundo.",
+                    "single_blog_description": "El Museo Británico se fundó en 1753 y abrió sus puertas al público en 1759. Su colección permanente de algunas ocho millones de obras es una de las más grandes y más completas que se encuentran fuera del ámbito del país de origen de los objetos. Proviene de todos los continentes, ilustrando y documentando la historia y la cultura humana desde sus inicios hasta el presente. Entre los objetos más destacados se encuentran la Piedra de Rosetta, el friso del Partenón, y los tesoros de la tumba de Tutankamón. El Museo Británico no cobra entrada, lo que lo convierte en uno de los museos más visitados del mundo."
+                },
+                {
+                    "id": 3,
+                    "name": "Torre de Londres",
+                    "image": "/images/blog-list/tower-of-london.jpeg",
+                    "single_blog_image": "/images/blog-details/tower-of-london-1.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "La Torre de Londres es un complejo histórico en el centro de Londres.",
+                    "single_blog_description": "La Torre de Londres es una de las fortificaciones más antiguas y bien conservadas del mundo. Fue fundada en 1066 como parte de la conquista normanda de Inglaterra. El castillo ha desempeñado un papel importante en la historia británica y ha sido testigo de algunos eventos importantes, como la ejecución de Ana Bolena, la coronación de Isabel I y la reclusión de prisioneros notorios como Guy Fawkes. Hoy en día, la Torre de Londres es un importante lugar turístico y alberga las Joyas de la Corona del Reino Unido."
+                },
+                {
+                    "id": 4,
+                    "name": "Caballería Doméstica",
+                    "image": "/images/blog-list/household-cavalry.jpeg",
+                    "single_blog_image": "/images/blog-details/tower-of-london-1.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "Observa a los soldados trabajando con sus caballos en las caballerizas originales del siglo XVIII, y explora una colección que representa más de 300 años de historia militar.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa de la ciudad construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el Rey Jorge III en 1761 como residencia privada para la Reina Carlota y se convirtió en La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a fines del siglo XIX y principios del XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones lujosamente decoradas y el jardín privado más grande de Londres."
+                  },
+                  {
+                    "id": 5,
+                    "name": "Palacio de Kensington",
+                    "image": "/images/blog-list/Kensington-Palace.jpeg",
+                    "single_blog_image": "/images/blog-details/blog-hero-image.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "El Palacio de Kensington ofrece una visión de la vida de sus antiguos residentes reales. Maravíllate con los vestidos usados por la realeza desde la era georgiana hasta la actualidad en la espectacular exposición de Crown to Couture.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa de la ciudad construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el Rey Jorge III en 1761 como residencia privada para la Reina Carlota y se convirtió en La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a fines del siglo XIX y principios del XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones lujosamente decoradas y el jardín privado más grande de Londres."
+                  },
+                  {
+                    "id": 6,
+                    "name": "Galería Nacional",
+                    "image": "/images/blog-list/national-gallery.jpeg",
+                    "single_blog_image": "/images/blog-details/blog-hero-image.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "Un estimado museo de arte que alberga una vasta colección de pinturas europeas del siglo XIII al XIX, incluyendo obras maestras de renombrados artistas como Leonardo da Vinci, Vincent van Gogh y Claude Monet.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa de la ciudad construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el Rey Jorge III en 1761 como residencia privada para la Reina Carlota y se convirtió en La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a fines del siglo XIX y principios del XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones lujosamente decoradas y el jardín privado más grande de Londres."
+                  },
+                  {
+                    "id": 7,
+                    "name": "Abadía de Westminster",
+                    "image": "/images/blog-list/national-gallery.jpeg",
+                    "single_blog_image": "/images/blog-details/blog-hero-image.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "Una iglesia histórica donde los monarcas británicos son coronados, casados y enterrados, conocida por su impresionante arquitectura gótica y conexiones reales.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa de la ciudad construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el Rey Jorge III en 1761 como residencia privada para la Reina Carlota y se convirtió en La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a fines del siglo XIX y principios del XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones lujosamente decoradas y el jardín privado más grande de Londres."
+                  },
+                  {
+                    "id": 8,
+                    "name": "London Eye",
+                    "image": "/images/blog-list/national-gallery.jpeg",
+                    "single_blog_image": "/images/blog-details/blog-hero-image.jpeg",
+                    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459684757106!2d-0.14446492343375675!3d51.50136397181192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2s!4v1713901710979!5m2!1sen!2s",
+                    "description": "Una icónica noria que ofrece vistas panorámicas del horizonte de la ciudad y lugares de interés como el río Támesis, el Big Ben y el Palacio de Buckingham.",
+                    "single_blog_description": "El Palacio de Buckingham es una parte esencial de la historia y cultura de Inglaterra. Originalmente conocido como Buckingham House, el edificio en el núcleo del palacio de hoy era una gran casa de la ciudad construida para el Duque de Buckingham en 1703, en un sitio que había estado en propiedad privada durante al menos 150 años. Luego fue adquirido por el Rey Jorge III en 1761 como residencia privada para la Reina Carlota y se convirtió en La Casa de la Reina. Durante el siglo XIX, los arquitectos John Nash y Edward Blore construyeron tres alas alrededor de un patio central. El Palacio de Buckingham se convirtió en la residencia oficial de Londres del monarca británico en la ascensión de la Reina Victoria en 1837. Después de importantes adiciones estructurales a fines del siglo XIX y principios del XX, y la Galería del Rey construida en el sitio de la capilla del palacio destruida durante la Segunda Guerra Mundial, ahora es un gran palacio con 775 habitaciones lujosamente decoradas y el jardín privado más grande de Londres."
+                  }
+            ]
+        }
+    }
+}

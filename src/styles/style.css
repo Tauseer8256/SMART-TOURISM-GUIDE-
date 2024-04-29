@@ -2,13 +2,7 @@
   :root {
     --color-default: #222222;
     --color-primary: #930253;
-    --color-secondary: #930253;
   }
-  
-  /* Smooth scroll behavior */
-  /* :root {
-    scroll-behavior: smooth;
-  } */
    
   h1,
   h2,
@@ -40,7 +34,7 @@
     display: block;
     width: 90px;
     height: 3px;
-    background: #930253;
+    background: var(--color-primary);
     left: 0;
     right: 0;
     bottom: 0;
@@ -153,12 +147,12 @@
     }
   }
   
-  #header .navigation-bar li {
+  #header .navigation-bar .nav-item {
     padding-left: 2em;
   }
   
   @media (max-width: 767px) {
-    #header .navigation-bar li {
+    #header .navigation-bar .nav-item {
       padding-left: 2em;
     }
   }
@@ -186,25 +180,23 @@
     }
 
     .navigation-bar {
-      background: #930253;
+      background: var(--color-primary);
     }
   }
   
   #header .navigation-bar a:hover {
-    /* border-color: #930253 !important; */
-    color: #930253 !important;
-    /* background: #f9f9f9;  */
+    color: var(--color-primary) !important;
   }
   @media (max-width: 768px) {
     #header .navigation-bar a:hover {
-      /* border-color: #930253 !important; */
+
       color: #ffffff !important;
-      /* background: #f9f9f9;  */
+
     }
     }
   #header .navigation-bar .active{
-    border-color: #930253 !important;
-    color: #930253 !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
     background: #f9f9f9; 
   }
   
@@ -299,7 +291,7 @@
 # Hero Section
 --------------------------------------------------------------*/
 #hero{
-  background:url('../assets/images/hero-image.jpg') center center no-repeat;
+  background:url('../assets/images/hero-image.jpg') center center no-repeat; /* [1] */
   background-size: cover;
 }
 .hero {
@@ -379,7 +371,7 @@
 }
 
 .line{
-  border: 1px solid #930253;
+  border: 1px solid var(--color-primary);
     width: 90px;
     margin-bottom: 18px;
 }
@@ -388,7 +380,7 @@
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #930253;
+  color: var(--color-primary);
 }
 
 /* Why Choose */
@@ -444,7 +436,7 @@ padding-left: 20px;
 }
 .swiperSlide img{
   width: 100%;
-  max-height: 500px;
+  min-height: 570px;
   border-radius: 30px;
 }
 
@@ -471,6 +463,184 @@ padding-left: 20px;
 .-single-property-detail h3{
   font-weight: 700;
 }
+
+/* ------------------------Blog-------------------------- */
+/*--------------------------------------------------------------
+#Blog Listing Hero Section
+--------------------------------------------------------------*/
+#blog-hero-sec{
+  background:url('../assets/images/blog/blog-hero-image.jpeg') center center no-repeat; /* [1] */
+  background-size: cover;
+}
+.blog-hero-sec {
+  width: 100%;
+  position: relative;
+  background: #4b4c4d;
+  padding: 180px 0 180px 0;
+}
+
+@media (min-width: 1365px) {
+  .blog-hero-sec {
+    background-attachment: fixed;
+  }
+}
+
+.blog-hero-sec h2 {
+  text-wrap: balance;
+  color: #fff;
+  /* margin-bottom: .7em; */
+  pointer-events: auto;
+  text-align: left;
+  text-shadow: 0 0 4px rgba(0,0,0,.6);
+  font-size: 60px;
+  font-weight: 800;
+
+}
+
+.blog-hero-sec p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+/*--------------------------------------------------------------
+# blog-listing Section
+--------------------------------------------------------------*/
+#blog-listing{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog-listing .blog-listing-flters {
+  padding: 0 0 20px 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.blog-listing .blog-listing-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-listing .blog-listing-flters li:hover,
+.blog-listing .blog-listing-flters li.filter-active {
+  color: var(--color-primary);
+}
+
+.blog-listing .blog-listing-flters li:first-child {
+  margin-left: 0;
+}
+
+.blog-listing .blog-listing-flters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .blog-listing .blog-listing-flters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.blog-listing .blog-listing-wrap {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-listing .blog-listing-wrap img {
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-listing .blog-listing-wrap .blog-listing-info {
+  padding: 25px 20px;
+  background-color: #fff;
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  z-index: 2;
+}
+
+.blog-listing .blog-listing-wrap .blog-listing-info h4 {
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 50px;
+  font-style: italic;
+}
+
+.blog-listing .blog-listing-wrap .blog-listing-info h4 a {
+  color: var(--color-default);
+  transition: 0.3s;
+  font-weight: 700;
+    font-size: 18px;
+}
+
+.blog-listing .blog-listing-wrap .blog-listing-info h4 a:hover {
+  color: var(--color-primary);
+}
+/* .blog-listing .blog-listing-wrap .blog-listing-info  a:hover {
+  color: var(--color-default);
+  transition: 0.3s;
+} */
+
+.blog-listing .blog-listing-wrap .blog-listing-info  .readmore {
+  margin-top: 20px;
+  color: var(--color-primary);
+}
+.blog-listing .blog-listing-wrap .blog-listing-info p {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-right: 50px;
+}
+
+.blog-listing .blog-listing-wrap:hover img {
+  transform: scale(1.1);
+}
+  /*--------------------------------------------------------------
+# Single Blog Detail Pages
+--------------------------------------------------------------*/
+#single-blog-detail{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+#single-blog-detail h2{
+  font-weight: 800;
+}
+#breadcrumb{
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+}
+
+#breadcrumb a{
+color: var(--color-primary);
+font-weight: 600;
+}
+
+#map-section  iframe{
+  width: 100%;
+  }
+
+  #ai-chat{
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #ai-chat .chat-box{
+    background:url('../assets/images/ai-hero.jpg') center center no-repeat; /* [1] */
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* background: #000; */
+    border-radius: 20px;
+  }
   /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -586,3 +756,9 @@ padding-left: 20px;
   .footer .credits a {
     color: #fff;
   }
+
+  .single-property-detail-text {
+    text-align: justify;  
+  }
+ 
+  /* [1] Yudaah, "Slider Image 2," Yudaah, [Online]. Available: https://www.yudaah.com/demo/best-free-travel-website-templates/assets/images/slider/slid_2.jpg. [Accessed: April 21, 2024]. */

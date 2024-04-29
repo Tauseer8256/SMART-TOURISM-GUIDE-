@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { BsFillCheckCircleFill } from "react-icons/bs";
-import AboutImageOne from "../../src/assets/images/about-1.webp";
-import AboutImageTwo from "../../src/assets/images/about_2.webp";
-import SliderImageOne from "../../src/assets/images/london-1.jpg";
-import SliderImageTwo from "../../src/assets/images/london-2.jpg";
-import SliderImageThree from "../../src/assets/images/london-3.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import React, { useEffect } from "react"; // [1]
+import { Link } from "react-router-dom"; // [2]
+import { BsFillCheckCircleFill } from "react-icons/bs"; // [3]
+import { Swiper, SwiperSlide } from "swiper/react"; // [4]
+import { Navigation, Pagination } from "swiper/modules"; // [5]
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import AOS from "aos";
+import AOS from "aos"; // [6]
+import { useTranslation } from "react-i18next";
+
+import AboutImageOne from "../../src/assets/images/about-1.webp"; // [7]
+import AboutImageTwo from "../../src/assets/images/about_2.webp"; // [8]
+import SliderImageOne from "../../src/assets/images/london-1.webp"; // will change image
+import SliderImageTwo from "../../src/assets/images/london-2.jpeg"; // will change image
+import SliderImageThree from "../../src/assets/images/london-3.jpeg"; // will change image
+import SliderImageFour from "../../src/assets/images/london-4.jpeg"; // will change image
+import SliderImageFive from "../../src/assets/images/london-5.jpeg"; // will change image
 
 const Home = () => {
+  const { t } = useTranslation();
+  const aboutUsBulletsPoints = t("HomePage.AboutUs.BulletPoint", { returnObjects: true });
   useEffect(() => {
     AOS.init();
   }, []);
@@ -39,21 +45,20 @@ const Home = () => {
               data-aos-delay="100"
             >
               <h2>
-                It is Better to <span>Travel Well Than to Arrive</span>
+              {t('HomePage.HeroSection.Heading')}
               </h2>
               <p>
-                we're dedicated to providing you with the ultimate travel
-                experience, tailored to your interests and preferences.
+              {t('HomePage.HeroSection.Text')}
               </p>
               <div className="d-flex justify-content-center justify-content-lg-start">
                 <Link href="/buy" className="btn-get-started">
-                  Get Started
+                {t('HomePage.HeroSection.Button')}
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-2">
+            {/* <div className="col-lg-6 order-1 order-lg-2"> */}
               {/* <Image src={HeroImage} className="img-fluid" alt=""  data-aos="fade-up" data-aos-delay="100"/> */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -62,39 +67,25 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="small-heading">ABOUT US</div>
+              <div className="small-heading">
+              {t('HomePage.AboutUs.badgeText')}
+              </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <h1>Explore All Corners of The World With Us</h1>
+              <h1>{t('HomePage.AboutUs.Heading')}</h1>
               <div className="line"></div>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly
-                into your mouth
+              {t('HomePage.AboutUs.Description')}
               </p>
               <ul>
-                <li>
+                {aboutUsBulletsPoints && aboutUsBulletsPoints?.map((item,index)=>(
+                <li key={index}>
                   <BsFillCheckCircleFill />
-                  Insider Tips and Recommendations:
+                  {item}
                 </li>
-                <li>
-                  <BsFillCheckCircleFill />
-                  Personalized Itineraries
-                </li>
-                <li>
-                  <BsFillCheckCircleFill />
-                  Cultural Immersion Experiences
-                </li>
-                <li>
-                  <BsFillCheckCircleFill />
-                  24/7 Customer Support
-                </li>
+                ))}
               </ul>
             </div>
             <div className="col-lg-6">
@@ -123,18 +114,15 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="small-heading">WHAT WE SERVE</div>
+              <div className="small-heading">{t('HomePage.DestinationSlides.badgeText')}</div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <h1>We Provide Top Destinations</h1>
+              <h1>{t('HomePage.DestinationSlides.Heading')}</h1>
               <div className="line"></div>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean
+              {t('HomePage.DestinationSlides.Description')}
               </p>
             </div>
             <div className="col-lg-6"></div>
@@ -148,6 +136,11 @@ const Home = () => {
                 spaceBetween={30}
                 modules={[Navigation, Pagination]}
                 className="mySwiper"
+                loop={true}
+                autoplay={{
+                    delay: 100,
+                    disableOnInteraction: false
+                }}
               >
                 <SwiperSlide className="swiperSlide">
                   <img src={SliderImageOne} className="border p-1" alt="" />
@@ -160,6 +153,12 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide className="swiperSlide">
                   <img src={AboutImageTwo} className="border p-1" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className="swiperSlide">
+                  <img src={SliderImageFour} className="border p-1" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className="swiperSlide">
+                  <img src={SliderImageFive} className="border p-1" alt="" />
                 </SwiperSlide>
                 <SwiperSlide className="swiperSlide">
                   <img src={AboutImageOne} className="border p-1" alt="" />
@@ -177,3 +176,12 @@ const Home = () => {
 };
 
 export default Home;
+
+// [1] React, "React Documentation," [Online]. Available: https://reactjs.org/docs/getting-started.html. [Accessed: April 21, 2024].
+// [2] React Training, "React Router Documentation," [Online]. Available: https://reactrouter.com/web/guides/quick-start. [Accessed: April 21, 2024].
+// [3] React Icons, "React Icons Documentation," [Online]. Available: https://react-icons.github.io/react-icons/icons?name=bs. [Accessed: April 21, 2024].
+// [4] Swiper, "Swiper React Documentation," [Online]. Available: https://swiperjs.com/react. [Accessed: April 21, 2024].
+// [5] Swiper, "Swiper Modules Documentation," [Online]. Available: https://swiperjs.com/react/modules. [Accessed: April 21, 2024].
+// [6] Michał Sajnóg, "AOS - Animate On Scroll Library," [Online]. Available: https://michalsnik.github.io/aos/. [Accessed: April 21, 2024].
+// [7] Colorlib, "About Image," Colorlib, [Online]. Available: https://preview.colorlib.com/theme/passport/images/about_1.jpg.webp. [Accessed: April 21, 2024].
+// [8] Colorlib, "About Image 2," Colorlib, [Online]. Available: https://preview.colorlib.com/theme/passport/images/about_2.jpg.webp. [Accessed: April 21, 2024].
