@@ -6,11 +6,29 @@ import BlogDetail from "./pages/BlogDetail";
 import Layout from "./common/Layout";
 import AiChatAssistance from "./pages/AiChatAssistance";
 import AboutUs from "./pages/AboutUs";
+import useLanguageDirection from "./components/useLanguageDirection";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
+  useLanguageDirection()
   return (
     <Router>
       <Routes>
+      <Route
+          path="/login"
+          element={
+              <Login />
+          }
+          exact
+        />
+        <Route
+          path="/sign-up"
+          element={
+              <SignUp />
+          }
+          exact
+        />
         <Route
           path="/"
           element={

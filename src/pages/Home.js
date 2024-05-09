@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import AOS from "aos"; // [6]
 import { useTranslation } from "react-i18next";
-
+import useLanguageDirection from "../components/useLanguageDirection";
 import AboutImageOne from "../../src/assets/images/about-1.webp"; // [7]
 import AboutImageTwo from "../../src/assets/images/about_2.webp"; // [8]
 import SliderImageOne from "../../src/assets/images/london-1.webp"; // will change image
@@ -19,8 +19,16 @@ import SliderImageFive from "../../src/assets/images/london-5.jpeg"; // will cha
 
 const Home = () => {
   const { t } = useTranslation();
+  useLanguageDirection()
   const aboutUsBulletsPoints = t("HomePage.AboutUs.BulletPoint", { returnObjects: true });
   useEffect(() => {
+    // const lang = localStorage.getItem('i18nextLng');
+    // if (lang === 'PK') {
+    //   document.body.dir = 'rtl';
+    // } else {
+    //   document.body.dir = 'ltr';
+    // }
+
     AOS.init();
   }, []);
   return (
@@ -51,7 +59,7 @@ const Home = () => {
               {t('HomePage.HeroSection.Text')}
               </p>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <Link href="/buy" className="btn-get-started">
+                <Link to="/blog-list" className="btn-get-started">
                 {t('HomePage.HeroSection.Button')}
                 </Link>
               </div>

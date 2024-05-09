@@ -7,6 +7,7 @@ import LogoImage from "../assets/images/site-logo.png";
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next"; // [6]
 import ReactFlagsSelect from "react-flags-select"; // [7]
+import ProfileMenu from "../components/ProfileMenu";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -14,9 +15,15 @@ const Header = () => {
 
   // State to hold the selected language
   const [selectedLanguage, setSelectedLanguage] = useState("");
+  const [isAuthenticated,setIsAuthenticated]= useState(false)
+  const [userName, setUserName]=useState("")
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("i18nextLng");
+    const authToken = localStorage.getItem("AuthenticationToken") 
+    const user = localStorage.getItem("UserName")
+    setUserName(user ? user : "User")
+    authToken ? setIsAuthenticated(true) : setIsAuthenticated(false )
     if (storedLanguage) {
       setSelectedLanguage(storedLanguage);
       i18n.changeLanguage(storedLanguage);
@@ -43,7 +50,11 @@ const Header = () => {
     localStorage.setItem("i18nextLng", selectedValue); // Store selected language in local storage
     i18n.changeLanguage(selectedValue);
   };
-
+  const onLogout = () => {
+    localStorage.removeItem("AuthenticationToken");
+    localStorage.removeItem("UserName");
+    setIsAuthenticated(false);
+  };
   return (
     <>
       <section id="topbar" className="topbar d-flex align-items-center">
@@ -51,14 +62,14 @@ const Header = () => {
           <div className="contact-info d-flex align-items-center">
             <i className="bi bi-envelope d-flex align-items-center">
               <MdEmail />
-              <a href="mailto:smarttourismguide@gmail.com">
+              <a href="mailto:smarttourismguide@mailinator.com">
                 {" "}
-                smarttourismguide@gmail.com
+                smarttourismguide@mailinator.com
               </a>
             </i>
             <i className="bi bi-phone d-flex align-items-center ms-4">
               <MdCall />
-              <span> +971521661480</span>
+              <span> +441521661480</span>
             </i>
           </div>
           <div className="social-links d-none d-md-flex align-items-center">
@@ -127,11 +138,6 @@ const Header = () => {
                     {t("Header.Menu2")}
                   </Link>
                 </li>
-                {/* <li className="nav-item" onClick={closeMenu}>
-                  <Link className={"nav-link"} to="/">
-                    {t("Header.Menu3")}
-                  </Link>
-                </li> */}
                 <li className="nav-item" onClick={closeMenu}>
                   <Link className={
                       location.pathname === "/about-us" ? "active nav-link" : "nav-link"
@@ -139,23 +145,26 @@ const Header = () => {
                     {t("Header.Menu4")}
                   </Link>
                 </li>
+                {isAuthenticated &&
                 <li className="nav-item" onClick={closeMenu}>
                   <Link className={
                       location.pathname === "/ai-assistance" ? "active nav-link" : "nav-link"
                     } to="/ai-assistance">
                     {t("Header.Menu5")}
                   </Link>
-                </li>
+                </li>}
               </ul>
             </Navbar.Collapse>
-            <ReactFlagsSelect
+            {isAuthenticated && <ReactFlagsSelect
               showSelectedLabel={false}
               showOptionLabel={false}
-              // countries={["US","GB", "PK", "IN", "BD", "CN"]}
-              countries={["GB","IN","ES","JP"]}
+              countries={["GB","PK","IN","BD","CN"]}
               selected={selectedLanguage}
               onSelect={(code) => handleLanguageSelect(code)}
-            />
+            />}
+            {!isAuthenticated ? 
+            <Link to="/login" type="button" className="btn ml-5 btn-dark header-login-btn">Login</Link>
+            : <ProfileMenu userName={userName} onLogout={onLogout} />}
           </Container>
         </Navbar>
       </section>

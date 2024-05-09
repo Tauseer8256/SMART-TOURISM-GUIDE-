@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" className="logo d-flex align-items-center">
+            <a href="/" className="logo d-flex align-items-center">
               <span>{t('Footer.SiteName')}</span>
             </a>
             <p>{t('Footer.SiteDescription')}</p>

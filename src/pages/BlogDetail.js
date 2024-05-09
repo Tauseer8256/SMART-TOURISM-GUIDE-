@@ -65,7 +65,7 @@ function BlogDetail() {
         <div className="container">
           <div className="row gy-5">
             <div className="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <h2>{`About ${place?.name}`}</h2>
+              <h2>{`${place?.name}`}</h2>
               <div className="line"></div>
               {/* <div className="single-property-detail-text">
                 {place?.single_blog_description}
