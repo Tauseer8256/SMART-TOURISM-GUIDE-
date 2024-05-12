@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import { IoHome } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 import SiteLogo from "../assets/images/site-logo.png";
@@ -39,8 +39,9 @@ const Login = () => {
         localStorage.setItem("UserName",responseMessage?.data?.firstname)
         navigate("/");
       } else {
+        let errorMsg = responseMessage?.message;
         setLoader(false);
-        setErrorMessage("incorrect email or password");
+        setErrorMessage(errorMsg ? errorMsg : "Invalid username or password");
       }
     }
     setValidated(true);
@@ -64,6 +65,8 @@ const Login = () => {
           <IoHome />
         </Link>
       </div>
+      <Row className="justify-content-center">
+      <Col md={6}>
       <div className="login-container">
         <Link to="/" className="mb-2 d-block auth-logo">
           <img
@@ -107,6 +110,7 @@ const Login = () => {
                 fontSize: 12,
                 color: "red",
                 fontWeight: 400,
+                marginBottom:10
               }}
             >
               {errorMessage}
@@ -134,7 +138,8 @@ const Login = () => {
             </Link>
           </div>
         </Form>
-      </div>
+      </div></Col></Row>
+
     </section>
   );
 };

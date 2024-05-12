@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import { FiSend } from "react-icons/fi";
+import React, { useState } from "react"; // [1]
+import { Form, Button, Container, Row, Col } from "react-bootstrap"; // [2]
+import { FiSend } from "react-icons/fi"; // [3]
 
 function AiChatAssistance() {
   const [messages, setMessages] = useState([]);
@@ -17,7 +17,7 @@ function AiChatAssistance() {
     const myHeaders = new Headers();
     myHeaders.append(
       "Authorization",
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0NTczODEyLCJleHAiOjE3MTQ2NjAyMTJ9.q8XUXI-jkTBEBLmty6E3vwz5iVTV5p-IlhPYxKsdUCg"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0NTczODEyLCJleHAiOjE3MTQ2NjAyMTJ9.q8XUXI-jkTBEBLmty6E3vwz5iVTV5p-IlhPYxKsdUCg" // set token inheader to make request
     );
     myHeaders.append("Content-Type", "application/json");
 
@@ -29,7 +29,7 @@ function AiChatAssistance() {
     };
 
     fetch(
-      "https://68f2-203-215-165-236.ngrok-free.app/api/ai/open-ai/es",
+      "https://smart-tourism-node-skwj.vercel.app/api/ai/open-ai/in", // calling backend url to fetch AI response
       requestOptions
     )
       .then((response) => response.json())
@@ -81,3 +81,7 @@ function AiChatAssistance() {
 }
 
 export default AiChatAssistance;
+
+// [1] React, "React Documentation," [Online]. Available: https://reactjs.org/docs/getting-started.html. [Accessed: April 21, 2024].
+// [2] react-bootstrap. (n.d.). React Bootstrap. Retrieved from https://react-bootstrap.github.io/
+// [3] react-icons, "React Icons Documentation," [Online]. Available: https://react-icons.github.io/react-icons/. [Accessed: April 21, 2024].

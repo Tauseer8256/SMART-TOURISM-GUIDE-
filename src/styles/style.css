@@ -933,8 +933,6 @@ font-weight: 600;
   color: #fff !important;
   }
   .login-container {
-    width: 32%;
-    min-width: 450px;
     margin: auto;
     padding: 3rem;
     border-radius: 10px;
@@ -1030,4 +1028,8 @@ font-weight: 600;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.v-hidden {
+  visibility: hidden;
 }

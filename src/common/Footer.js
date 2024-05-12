@@ -18,10 +18,10 @@ const Footer = () => {
             </a>
             <p>{t('Footer.SiteDescription')}</p>
             <div className="social-links d-flex mt-4">
-            <a href="#" className="twitter"><FaTwitter /></a>
-           <a href="#" className="facebook"><FaFacebook /></a>
-           <a href="#" className="instagram"><FaInstagram /></a>
-            <a href="#" className="linkedin"><FaLinkedin /></a>
+            <a href="https://twitter.com/MalikTauseer" className="twitter"><FaTwitter /></a>
+           <a href="https://www.facebook.com/maliktaufeekhan.taufee" className="facebook"><FaFacebook /></a>
+           <a href="https://www.instagram.com/maliktauseer8256/" className="instagram"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/maliktaufee-khan-07b425177/" className="linkedin"><FaLinkedin /></a>
             </div>
           </div>
   
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </div>
   
-          <div className="col-lg-2 col-6 footer-links">
+          <div className="col-lg-2 col-6 footer-links v-hidden">
             <h4>{t('Footer.OurServicesHeading')}</h4>
             <ul>
             {ourServices?.map((item,index)=>(<li key={index}><Link to="">{item}</Link></li>))}         

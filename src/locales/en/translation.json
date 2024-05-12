@@ -7,8 +7,8 @@
     },
     "AboutUs": {
       "badgeText": "ABOUT US",
-      "Heading": "Explore All Corners of The World With Us",
-      "Description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth",
+      "Heading": "Discover Every Corner of London With Us",
+      "Description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in London right at the coast of the Thames, a large river. A small river named Thames flows by their place and supplies it with the necessary regelialia. It is a paradisematic city, in which roasted parts of sentences fly into your mouth.",
       "ImageOne": "",
       "ImageTwo": "",
       "BulletPoint": [
@@ -20,8 +20,8 @@
     },
     "DestinationSlides": {
       "badgeText": "WHAT WE SERVE",
-      "Heading": "We Provide Top Destinations",
-      "Description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean",
+      "Heading": "We bridge the language barrier.",
+      "Description": "Far far away, behind the word skyscrapers, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in London right at the coast of the Thames, a large river.",
       "SlidesImages": ["", "", "", ""]
     }
   },

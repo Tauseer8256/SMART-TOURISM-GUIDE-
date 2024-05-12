@@ -1,5 +1,4 @@
-// const SMART_TOURISM_API_URL = `https://4894-203-215-165-236.ngrok-free.app`;
-const SMART_TOURISM_API_URL = `http://localhost:8000`;
+const SMART_TOURISM_API_URL = `https://smart-tourism-node-skwj.vercel.app`;
 
 // Create Header for api request
 const createHeaders = (token) => {

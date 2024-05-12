@@ -73,16 +73,16 @@ const Header = () => {
             </i>
           </div>
           <div className="social-links d-none d-md-flex align-items-center">
-            <a href="#" className="twitter">
+            <a href="https://twitter.com/MalikTauseer" className="twitter">
               <FaTwitter />
             </a>
-            <a href="#" className="facebook">
+            <a href="https://www.facebook.com/maliktaufeekhan.taufee" className="facebook">
               <FaFacebook />
             </a>
-            <a href="#" className="instagram">
+            <a href="https://www.instagram.com/maliktauseer8256/" className="instagram">
               <FaInstagram />
             </a>
-            <a href="#" className="linkedin">
+            <a href="https://www.linkedin.com/in/maliktaufee-khan-07b425177/" className="linkedin">
               <FaLinkedin />
             </a>
           </div>

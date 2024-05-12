@@ -7,8 +7,8 @@
     },
     "AboutUs": {
       "badgeText": "关于我们",
-      "Heading": "让我们一起探索世界的每一个角落",
-      "Description": "很久很久以前，在文字的山峰深处，远离了来自Vokalia和Consonantia等国家的远方，有一些无形的文字生活着。它们直接居住在书签地球的海岸线上，生活在巨大的语言海洋中。它们的地方有一条名为Duden的小河流经，为它们提供所需的规则性。那是Paradisal的国度。在那里，烤面包的一部分会跳进你的嘴里。",
+      "Heading": "与我们一起发现伦敦的每一个角落",
+      "Description": "遥远的地方，在文字的山后，在Vokalia和Consonantia的国家远离的地方，有盲文本。 他们分开住在泰晤士河的伦敦海岸附近，这是一条大河。 一条名为泰晤士河的小河经过他们的地方，并用必要的regelialia供应它。 这是一个天堂般的城市，在那里，烤句子的部分飞进你的嘴里。",
       "ImageOne": "",
       "ImageTwo": "",
       "BulletPoint": [
@@ -20,8 +20,8 @@
     },
     "DestinationSlides": {
       "badgeText": "提供内容",
-      "Heading": "我们提供顶级目的地",
-      "Description": "很久很久以前，在文字的山峰深处，远离了来自Vokalia和Consonantia等国家的远方，有一些无形的文字生活着。它们直接居住在书签地球的海岸线上，生活在巨大的语言海洋中",
+      "Heading": "我们架起了语言的桥梁。",
+      "Description": "遥远的地方，在高楼大厦的背后，远离国家的Vokalia和Consonantia，有盲文本。 他们分开住在泰晤士河的伦敦海岸附近，这是一条大河。",
       "SlidesImages": ["", "", "", ""]
     }
   },
