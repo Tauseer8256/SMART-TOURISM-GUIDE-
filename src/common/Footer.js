@@ -24,18 +24,17 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/maliktaufee-khan-07b425177/" className="linkedin"><FaLinkedin /></a>
             </div>
           </div>
-  
-          <div className="col-lg-2 col-6 footer-links">
-            <h4>{t('Footer.UsefulLinksHeading')}</h4>
-            <ul>
-              {useFullLinks?.map((item,index)=>(<li key={index}><Link to={item?.Route}>{item?.Label}</Link></li>))}
-            </ul>
-          </div>
-  
           <div className="col-lg-2 col-6 footer-links v-hidden">
             <h4>{t('Footer.OurServicesHeading')}</h4>
             <ul>
             {ourServices?.map((item,index)=>(<li key={index}><Link to="">{item}</Link></li>))}         
+            </ul>
+          </div>
+          
+          <div className="col-lg-2 col-6 footer-links">
+            <h4>{t('Footer.UsefulLinksHeading')}</h4>
+            <ul>
+              {useFullLinks?.map((item,index)=>(<li key={index}><Link to={item?.Route}>{item?.Label}</Link></li>))}
             </ul>
           </div>
   

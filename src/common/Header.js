@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";  // [1]
-import { Link, useLocation } from "react-router-dom"; // [2]
+import { Link, useLocation,useNavigate } from "react-router-dom"; // [2]
 import { Container, Navbar } from "react-bootstrap"; // [3]
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"; // [4]
 import { MdEmail, MdCall } from "react-icons/md"; // [5]
@@ -12,6 +12,7 @@ import ProfileMenu from "../components/ProfileMenu";
 const Header = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate()
 
   // State to hold the selected language
   const [selectedLanguage, setSelectedLanguage] = useState("");
@@ -54,6 +55,7 @@ const Header = () => {
     localStorage.removeItem("AuthenticationToken");
     localStorage.removeItem("UserName");
     setIsAuthenticated(false);
+    navigate("/")
   };
   return (
     <>

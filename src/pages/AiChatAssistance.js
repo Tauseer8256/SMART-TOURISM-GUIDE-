@@ -1,24 +1,45 @@
-import React, { useState } from "react"; // [1]
-import { Form, Button, Container, Row, Col } from "react-bootstrap"; // [2]
-import { FiSend } from "react-icons/fi"; // [3]
+import React, { useState, useEffect,useRef } from "react"; // [1]
+import { useNavigate } from "react-router-dom"; // [2]
+import { Form, Button, Container, Row, Col } from "react-bootstrap"; // [3]
+import { FiSend } from "react-icons/fi"; // [4]
 
 function AiChatAssistance() {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
+  const [token, setToken] = useState(null);
+  const messagesEndRef = useRef(null); // Create a ref
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const authToken = localStorage.getItem("AuthenticationToken");
+    setToken(authToken);
+    if (!authToken) {
+      navigate("/");
+    }
+  }, [navigate]);
+
+  useEffect(() => {
+    scrollToBottom(); // Scroll to bottom whenever messages change
+  }, [messages]);
+
+  const scrollToBottom = () => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const sendMessage = () => {
     if (inputText.trim() === "") return;
-    setMessages([...messages, { role: "user", content: inputText }]);
+
+    const newMessage = { role: "user", content: inputText };
+    setMessages((prevMessages) => [...prevMessages, newMessage]);
     setInputText("");
     fetchResponse(inputText);
   };
 
   const fetchResponse = (prompt) => {
     const myHeaders = new Headers();
-    myHeaders.append(
-      "Authorization",
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE0NTczODEyLCJleHAiOjE3MTQ2NjAyMTJ9.q8XUXI-jkTBEBLmty6E3vwz5iVTV5p-IlhPYxKsdUCg" // set token inheader to make request
-    );
+    myHeaders.append("Authorization", token);
     myHeaders.append("Content-Type", "application/json");
 
     const requestOptions = {
@@ -28,14 +49,16 @@ function AiChatAssistance() {
       redirect: "follow",
     };
 
+    let lang = localStorage.getItem("i18nextLng").toLowerCase() || "gb";
     fetch(
-      "https://smart-tourism-node-skwj.vercel.app/api/ai/open-ai/in", // calling backend url to fetch AI response
+      `https://smart-tourism-node-skwj.vercel.app/api/ai/open-ai/${lang}`,
       requestOptions
     )
       .then((response) => response.json())
       .then((result) => {
         const { content } = result.message;
-        setMessages([...messages, { role: "bot", content }]);
+        const botMessage = { role: "bot", content };
+        setMessages((prevMessages) => [...prevMessages, botMessage]);
       })
       .catch((error) => console.error(error));
   };
@@ -52,6 +75,7 @@ function AiChatAssistance() {
                     {message.content}
                   </div>
                 ))}
+                <div ref={messagesEndRef} />
               </div>
               <Form
                 className="chat-input"
@@ -60,7 +84,7 @@ function AiChatAssistance() {
                   sendMessage();
                 }}
               >
-                <Form.Group style={{width:"100%"}} controlId="formChatInput">
+                <Form.Group style={{ width: "100%" }} controlId="formChatInput">
                   <Form.Control
                     type="text"
                     placeholder="Type your message..."
@@ -69,7 +93,7 @@ function AiChatAssistance() {
                   />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                <FiSend />
+                  <FiSend />
                 </Button>
               </Form>
             </div>
@@ -81,6 +105,7 @@ function AiChatAssistance() {
 }
 
 export default AiChatAssistance;
+
 
 // [1] React, "React Documentation," [Online]. Available: https://reactjs.org/docs/getting-started.html. [Accessed: April 21, 2024].
 // [2] react-bootstrap. (n.d.). React Bootstrap. Retrieved from https://react-bootstrap.github.io/

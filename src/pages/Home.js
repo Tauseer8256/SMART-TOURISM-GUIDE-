@@ -168,9 +168,6 @@ const Home = () => {
                 <SwiperSlide className="swiperSlide">
                   <img src={SliderImageFive} className="border p-1" alt="" />
                 </SwiperSlide>
-                <SwiperSlide className="swiperSlide">
-                  <img src={AboutImageOne} className="border p-1" alt="" />
-                </SwiperSlide>
               </Swiper>
             </div>
           </div>

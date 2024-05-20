@@ -28,12 +28,12 @@ const SignUp = () => {
         return;
       }
       setLoader(true);
-      let Response = await SignUpUser(firstname, lastname, email, password);
-      let responseMessage = Response;
-      if (responseMessage?.token) {
+      let responseMessage = await SignUpUser(firstname, lastname, email, password);
+      console.log("here is the actual response data---->")
+      if (responseMessage?.data?.token) {
         setLoader(false);
-        localStorage.setItem("AuthenticationToken", responseMessage?.token);
-        localStorage.setItem("UserName", responseMessage?.data?.firstname);
+        localStorage.setItem("AuthenticationToken", responseMessage?.data?.token);
+        localStorage.setItem("UserName", responseMessage?.data?.data?.firstname);
         navigate("/");
       } else {
         let errorMsg = responseMessage?.message;

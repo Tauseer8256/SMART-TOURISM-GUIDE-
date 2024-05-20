@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import useLanguageDirection from "./components/useLanguageDirection";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import PrivateRoute from "./routes/PrivateRoute";
 
 const App = () => {
   useLanguageDirection()
@@ -59,11 +60,14 @@ const App = () => {
         <Route
           path="/ai-assistance"
           element={
-            <Layout>
-              <AiChatAssistance />
-            </Layout>
+            <PrivateRoute
+              element={
+                <Layout>
+                  <AiChatAssistance />
+                </Layout>
+              }
+            />
           }
-          exact
         />
         <Route
           path="/blog/:id"
