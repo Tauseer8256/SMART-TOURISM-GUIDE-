@@ -1,4 +1,4 @@
-const SMART_TOURISM_API_URL = `https://smart-tourism-node-skwj.vercel.app`;
+const SMART_TOURISM_API_URL = `https://msc-project-backend-code.vercel.app/`;
 
 // Create Header for api request
 const createHeaders = (token) => {

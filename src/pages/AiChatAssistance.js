@@ -51,7 +51,7 @@ function AiChatAssistance() {
 
     let lang = localStorage.getItem("i18nextLng").toLowerCase() || "gb";
     fetch(
-      `https://smart-tourism-node-skwj.vercel.app/api/ai/open-ai/${lang}`,
+      `https://msc-project-backend-code.vercel.app/api/ai/open-ai/${lang}`,
       requestOptions
     )
       .then((response) => response.json())
